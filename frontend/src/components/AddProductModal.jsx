@@ -14,7 +14,7 @@ export default function AddProductModal({closeModal,setStaterefersh}) {
             try {
               if (Auth) {
                 
-                const response= await axios.post(`https://e-commerce-app-vheb.onrender.com/product/create/${Auth._id}`,{
+                const response= await axios.post(`https://e-com-crud.onrender.com/product/create/${Auth._id}`,{
                   title,desc:description,ImageUrl:imageUrl
                 })
                  

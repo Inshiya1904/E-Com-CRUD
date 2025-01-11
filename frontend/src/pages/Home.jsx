@@ -35,7 +35,7 @@ const [show,setShow]=useState(false)
   const GetProducts = async () => {
     try {
       const resposne = await axios.get(
-        `https://e-commerce-app-vheb.onrender.com/product/getProducts/${Auth._id}`
+        `https://e-com-crud.onrender.com/product/getProducts/${Auth._id}`
       );
       const data = resposne.data;
       console.log(data);
@@ -74,7 +74,7 @@ const [show,setShow]=useState(false)
     try {
       
         
-      const response= await axios.delete(`https://e-commerce-app-vheb.onrender.com/product/delete/${deleteId}`)
+      const response= await axios.delete(`https://e-com-crud.onrender.com/product/delete/${deleteId}`)
        
     
       const data=response.data

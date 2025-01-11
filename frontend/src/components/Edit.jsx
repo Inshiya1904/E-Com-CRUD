@@ -13,7 +13,7 @@ export default function Edit({ item, closeModal,setStaterefersh }) {
     try {
       if (item?._id) {
         
-        const response= await axios.put(`https://e-commerce-app-vheb.onrender.com/product/update/${item._id}`,{
+        const response= await axios.put(`https://e-com-crud.onrender.com/product/update/${item._id}`,{
           title,desc:description,ImageUrl:imageUrl
         })
          
